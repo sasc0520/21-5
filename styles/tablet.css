@@ -1,0 +1,176 @@
+/** tablet **/
+
+@media (min-width:600px) {
+    /* tablet, portræt iPad */
+
+    main {
+        margin: 4rem 0;
+        padding: 5vw 6vw;
+    }
+
+    /* nav */
+
+    nav {
+        height: 85px;
+    }
+
+    .language {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .language.open {
+        height: 400px;
+    }
+
+    .login {
+        width: 3em;
+    }
+
+    .logo img {
+        width: 3rem;
+    }
+
+
+    .burger_open {
+        width: 3rem;
+    }
+
+    .burger_close {
+        font-size: 3rem;
+    }
+
+    nav .menu li a {
+        font-size: 1.5rem;
+    }
+
+    nav .menu input {
+        padding: 10px 40px;
+    }
+
+
+    /*Generelle tekster*/
+
+    H1 {
+        font-size: 2.7rem;
+        margin-bottom: 2rem;
+    }
+
+    H2 {
+        font-size: 2rem;
+        margin: 2rem 0 1rem 0;
+    }
+
+    H3 {
+        font-size: 1.5rem;
+        margin: 1.5rem;
+    }
+
+    p,
+    li,
+    span {
+        line-height: 2.4rem;
+        font-size: 1.3rem;
+    }
+
+
+    .footer_grid {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .footer_grid ul {
+        text-align: left;
+        margin: 0 auto;
+        width: 15rem;
+    }
+
+    footer form input {
+        padding: 7px 20px;
+    }
+
+    /**Colapse_btn**/
+
+    .colapse_btn {
+        border: 2.5px solid #F6B59D;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+
+    .colapse_btn span,
+    .colapse_btn span a:active,
+    .colapse_btn span a:link,
+    .colapse_btn span a:visited,
+    .colapse_btn span a:hover {
+        font-size: 2rem;
+    }
+
+
+    .colapse_btn ul li {
+        padding: 0.7rem;
+        font-size: 1.7rem;
+    }
+
+    /**multi colapse **/
+
+    .multi_colapse_btn {
+        border: 2.5px solid #F6B59D;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    .multi_colapse_btn span,
+    .multi_colapse_btn span a:active,
+    .multi_colapse_btn span a:link,
+    .multi_colapse_btn span a:visited,
+    .multi_colapse_btn span a:hover {
+        font-size: 2rem;
+    }
+
+    .multi_colapse_btn ul li {
+        font-size: 1.7rem;
+    }
+
+
+    /**faq colapse **/
+
+    .faq_colapse_btn {
+        border: 2.5px solid #F6B59D;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    .faq_colapse_btn span,
+    .faq_colapse_btn span a:active,
+    .faq_colapse_btn span a:link,
+    .faq_colapse_btn span a:visited,
+    .faq_colapse_btn span a:hover {
+        font-size: 2rem;
+    }
+
+    .faq_colapse_btn ul li {
+        margin-top: .5rem;
+        font-size: 1.7rem;
+    }
+
+    .faq_colapse_btn .colapse_wrap > li {
+        margin-top: 3rem;
+    }
+
+    /** footer **/
+
+    #social {
+        width: 110px;
+        margin: 0 auto;
+    }
+
+    #social img {
+        width: 3rem;
+        display: inline-block;
+
+    }
+
+}

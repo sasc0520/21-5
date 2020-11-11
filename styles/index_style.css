@@ -1,0 +1,263 @@
+/* splash */
+
+main {
+    margin-top: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* styling af main i index*/
+
+.sitemargin {
+    margin: 4rem 0;
+    padding: 5vw;
+}
+
+/** Navigation **/
+
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#splash {
+    position: relative;
+    height: 100vh;
+    max-width: none;
+}
+
+#splash::after {
+    content: "";
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+#splash.image1::after {
+    background-image: url(../billeder/1.jpg);
+    background-size: cover;
+    background-position: 30% 11%;
+}
+
+#splash.image2::after {
+    background-image: url(../billeder/2.jpg);
+    background-size: cover;
+    background-position: 30% 11%;
+}
+
+#splash.image3::after {
+    background-image: url(../billeder/3.jpg);
+    background-size: cover;
+    background-position: 30% 11%;
+}
+
+#splash.image4::after {
+    background-image: url(../billeder/4.jpg);
+    background-size: cover;
+    background-position: 30% 11%;
+}
+
+#splash.image5::after {
+    background-image: url(../billeder/5.jpg);
+    background-size: cover;
+    background-position: 30% 11%;
+}
+
+#splash h3 {
+    margin: 200px auto 0 auto;
+    background-color: #f7eddc;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 300px;
+}
+
+#splash p {
+    margin: 20px auto 0 auto;
+    background-color: #f7eddc;
+    border-radius: 100px;
+    text-align: center;
+    width: 220px;
+}
+
+#scroll_btn {
+    display: block;
+    margin: 0 auto;
+    width: 2rem;
+    position: relative;
+    top: 93vh;
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+
+.popup_btn {
+    width: 6rem;
+    height: 6rem;
+    background-color: #B3DCD4;
+    font-size: 1.5rem;
+    border-radius: 25%;
+    text-align: center;
+    position: relative;
+    margin: 1rem auto 1rem auto;
+    cursor: pointer;
+
+}
+
+.popup_btn span {
+    color: #FFFFFF !important;
+}
+
+.popup_btn > span {
+    position: relative;
+    top: 1.5rem;
+}
+
+.popup_btn div:nth-child(2) {
+    border: 1px solid #FFFFFF;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -.7rem;
+    background-color: #B3DCD4;
+    left: 2rem;
+}
+
+.popup_btn .popup {
+    width: 12rem;
+    padding: .5rem;
+    border-radius: 15px;
+    font-size: initial;
+    text-align: left;
+    border: 2px solid #B3DCD4;
+    background-color: #FFFFFF;
+    left: -3rem;
+    top: 4.5rem;
+    color: #000000;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.horizontal_grid a {
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.horizontal_grid.images a {
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    height: 50vw;
+    margin-top: 1rem;
+    background-size: cover;
+    display: block;
+}
+
+.horizontal_grid.images a.image1 {
+    background-image: url("../billeder/destinationer.jpg")
+}
+
+.horizontal_grid.images a.image2 {
+    background-image: url("../billeder/boliger.jpg")
+}
+
+.horizontal_grid.images a.image3 {
+    background-image: url("../billeder/familier.jpg")
+}
+
+.horizontal_grid a h3 {
+    background-color: #f7eddc;
+    color: black;
+    font-size: 90%;
+    border-radius: 50px;
+    padding: 5px 15px 5px 15px;
+    display: inline-block;
+    margin-top: 25%;
+}
+
+
+.popup_btn .popup p a,
+.popup_btn .popup p a:active,
+.popup_btn .popup p a:link,
+.popup_btn .popup p a:visited,
+.popup_btn .popup p a:hover {
+    cursor: pointer;
+    color: #000000;
+    text-align: center;
+    display: block;
+}
+
+
+/**margin for main i tablet**/
+@media (min-width:600px) {
+    /* tablet, portræt iPad */
+
+    .sitemargin {
+        margin: 4rem 0;
+        padding: 5vw 6vw;
+    }
+
+    #splash h3 {
+        margin: 300px auto 0 auto;
+        width: 500px;
+    }
+
+    #splash p {
+        width: 260px;
+    }
+}
+
+/**margin for main i desktop**/
+
+@media (min-width:801px) {
+    .sitemargin {
+        margin: 4rem 0;
+        padding: 5vw 12vw;
+    }
+
+    .horizontal_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(auto-fill);
+        grid-column-gap: 30px;
+    }
+
+    .margin_icons_frontpage {
+        margin-bottom: 4.5rem;
+    }
+
+    .fig_graph {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .horizontal_grid.images a {
+        height: 13.4vw;
+        margin-top: 0;
+    }
+
+    .margin_icons_frontpage {
+        margin-bottom: 4.5rem;
+    }
+
+
+    #splash h3 {
+        width: 700px;
+        border-radius: 100px;
+    }
+
+    #splash p {
+        width: 300px;
+    }
+
+}

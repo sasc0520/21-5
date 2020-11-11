@@ -1,0 +1,126 @@
+/** Desktop **/
+@media (min-width:801px) {
+    .gridwrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto-fill);
+        grid-column-gap: 30px;
+    }
+
+    nav {
+        height: 67px;
+        grid-template-columns: 1fr .5fr 1.75fr 1fr 1.25fr 1fr 1fr;
+    }
+
+    nav .menu li {
+        margin: 1.8rem 75px 0 0;
+    }
+
+    main {
+        margin: 4rem 0;
+        padding: 5vw 12vw;
+    }
+
+
+
+    /*Generelle tekster*/
+
+    .text_margin {
+        margin: 0
+    }
+
+    .text_center {
+        text-align: center;
+    }
+
+    H1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    H2 {
+        font-size: 1.5rem;
+        margin: 2rem 0 1rem 0;
+
+    }
+
+    H3 {
+        font-size: 1.5rem;
+        margin: 1.5rem;
+
+    }
+
+    p,
+    li,
+    span {
+        line-height: 2rem;
+        font-size: 1rem;
+
+    }
+
+    /**Colapse_btn**/
+
+    .colapse_btn {
+        width: 50%;
+        margin: 0 auto 2rem auto;
+    }
+
+
+    .colapse_btn span,
+    .colapse_btn span a:active,
+    .colapse_btn span a:link,
+    .colapse_btn span a:visited,
+    .colapse_btn span a:hover {
+        font-size: 1.7rem;
+    }
+
+
+    .colapse_btn ul li {
+        font-size: 1.4rem;
+    }
+
+    /**multi colapse **/
+
+    .multi_colapse_btn {
+        width: 50%;
+        margin: 0 auto 2rem auto;
+
+    }
+
+    .multi_colapse_btn span,
+    .multi_colapse_btn span a:active,
+    .multi_colapse_btn span a:link,
+    .multi_colapse_btn span a:visited,
+    .multi_colapse_btn span a:hover {
+        font-size: 1.7rem;
+    }
+
+    .multi_colapse_btn ul li {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .multi_colapse_btn .colapse_wrap > li {
+        margin-top: 3rem;
+    }
+
+    /**faq colapse **/
+
+    .faq_colapse_btn span,
+    .faq_colapse_btn span a:active,
+    .multi_colapse_btn span a:link,
+    .multi_colapse_btn span a:visited,
+    .multi_colapse_btn span a:hover {
+        font-size: 1.7rem;
+    }
+
+    .faq_colapse_btn ul li {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .faq_colapse_btn .colapse_wrap > li {
+        margin-top: 3rem;
+    }
+}
+}
